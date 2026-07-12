@@ -1,0 +1,73 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* main.m */; };
+		A10000000000000000000002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* AppDelegate.m */; };
+		A10000000000000000000003 /* LegacyBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* LegacyBrowserViewController.m */; };
+		A10000000000000000000004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* UIKit.framework */; };
+		A10000000000000000000005 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* WebKit.framework */; };
+		A10000000000000000000006 /* browser-shell in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* browser-shell */; };
+		A10000000000000000000007 /* legacy-webkit in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* legacy-webkit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegacyBrowser/main.m; sourceTree = "<group>"; };
+		A20000000000000000000002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegacyBrowser/AppDelegate.m; sourceTree = "<group>"; };
+		A20000000000000000000003 /* LegacyBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegacyBrowser/LegacyBrowserViewController.m; sourceTree = "<group>"; };
+		A20000000000000000000004 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegacyBrowser/AppDelegate.h; sourceTree = "<group>"; };
+		A20000000000000000000005 /* LegacyBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegacyBrowser/LegacyBrowserViewController.h; sourceTree = "<group>"; };
+		A20000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LegacyBrowser/Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000007 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000008 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A20000000000000000000009 /* browser-shell */ = {isa = PBXFileReference; lastKnownFileType = folder; name = browser-shell; path = ../browser-shell; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000010 /* legacy-webkit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = legacy-webkit; path = ../legacy-webkit; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000011 /* LegacyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000004 /* UIKit.framework in Frameworks */, A10000000000000000000005 /* WebKit.framework in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {isa = PBXGroup; children = (A40000000000000000000002 /* LegacyBrowser */, A40000000000000000000003 /* Resources */, A40000000000000000000004 /* Frameworks */, A40000000000000000000005 /* Products */, ); sourceTree = "<group>"; };
+		A40000000000000000000002 /* LegacyBrowser */ = {isa = PBXGroup; children = (A20000000000000000000001 /* main.m */, A20000000000000000000004 /* AppDelegate.h */, A20000000000000000000002 /* AppDelegate.m */, A20000000000000000000005 /* LegacyBrowserViewController.h */, A20000000000000000000003 /* LegacyBrowserViewController.m */, A20000000000000000000006 /* Info.plist */, ); path = ios; sourceTree = "<group>"; };
+		A40000000000000000000003 /* Resources */ = {isa = PBXGroup; children = (A20000000000000000000009 /* browser-shell */, A20000000000000000000010 /* legacy-webkit */, ); name = Resources; sourceTree = "<group>"; };
+		A40000000000000000000004 /* Frameworks */ = {isa = PBXGroup; children = (A20000000000000000000007 /* UIKit.framework */, A20000000000000000000008 /* WebKit.framework */, ); name = Frameworks; sourceTree = "<group>"; };
+		A40000000000000000000005 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000011 /* LegacyBrowser.app */, ); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* LegacyBrowser */ = {isa = PBXNativeTarget; buildConfigurationList = A90000000000000000000002 /* Build configuration list for PBXNativeTarget "LegacyBrowser" */; buildPhases = (A60000000000000000000001 /* Sources */, A30000000000000000000001 /* Frameworks */, A70000000000000000000001 /* Resources */, ); buildRules = (); dependencies = (); name = LegacyBrowser; productName = LegacyBrowser; productReference = A20000000000000000000011 /* LegacyBrowser.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {LastUpgradeCheck = 0730; ORGANIZATIONNAME = LegacyBrowser; TargetAttributes = {A50000000000000000000001 = {CreatedOnToolsVersion = 7.3; DevelopmentTeam = ""; }; }; }; buildConfigurationList = A90000000000000000000001 /* Build configuration list for PBXProject "LegacyBrowser" */; compatibilityVersion = "Xcode 3.2"; developmentRegion = English; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = A40000000000000000000001; productRefGroup = A40000000000000000000005 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A50000000000000000000001 /* LegacyBrowser */, ); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000006 /* browser-shell in Resources */, A10000000000000000000007 /* legacy-webkit in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* main.m in Sources */, A10000000000000000000002 /* AppDelegate.m in Sources */, A10000000000000000000003 /* LegacyBrowserViewController.m in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu99; GCC_DYNAMIC_NO_PIC = NO; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)", ); GCC_SYMBOLS_PRIVATE_EXTERN = NO; IPHONEOS_DEPLOYMENT_TARGET = 9.3; SDKROOT = iphoneos; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		B10000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu99; IPHONEOS_DEPLOYMENT_TARGET = 9.3; SDKROOT = iphoneos; TARGETED_DEVICE_FAMILY = "1,2"; VALIDATE_PRODUCT = YES; }; name = Release; };
+		B10000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; INFOPLIST_FILE = ios/LegacyBrowser/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 9.3; PRODUCT_BUNDLE_IDENTIFIER = org.webkit.LegacyBrowser; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		B10000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; INFOPLIST_FILE = ios/LegacyBrowser/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 9.3; PRODUCT_BUNDLE_IDENTIFIER = org.webkit.LegacyBrowser; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90000000000000000000001 /* Build configuration list for PBXProject "LegacyBrowser" */ = {isa = XCConfigurationList; buildConfigurations = (B10000000000000000000001 /* Debug */, B10000000000000000000002 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A90000000000000000000002 /* Build configuration list for PBXNativeTarget "LegacyBrowser" */ = {isa = XCConfigurationList; buildConfigurations = (B10000000000000000000003 /* Debug */, B10000000000000000000004 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000000000000000000001 /* Project object */;
+}

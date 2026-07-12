@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Legacy Modern Browser Shell</title>
+    <link rel="stylesheet" href="/browser-shell/browser-shell.css">
+    <link rel="stylesheet" href="/legacy-webkit/legacy-fallbacks.css">
+    <script>
+    window.LegacyWebKitCompat = {
+        autoBoot: false,
+        cssVariables: {
+            '.browser-shell': { 'background': '#eef2f7', 'color': '#111827' }
+        },
+        wasmFallbacks: {}
+    };
+    </script>
+    <script src="/legacy-webkit/compat-loader.js"></script>
+    <script src="/browser-shell/browser-shell.js"></script>
+</head>
+<body>
+    <div class="browser-shell" id="browser-shell">
+        <div class="toolbar">
+            <button type="button" data-action="back">‹</button>
+            <button type="button" data-action="forward">›</button>
+            <button type="button" data-action="reload">刷新</button>
+            <form class="address-form" data-role="address-form">
+                <input class="address-input" data-role="address" type="text" inputmode="url" autocapitalize="none" autocomplete="off" placeholder="搜索或输入网址">
+                <button type="submit">前往</button>
+            </form>
+            <button type="button" data-action="new-tab">＋</button>
+            <button type="button" data-action="close-tab">关闭</button>
+        </div>
+        <div class="tab-strip" data-role="tabs"></div>
+        <div class="feature-bar" data-role="features"></div>
+        <div class="status-line" data-role="status">准备就绪</div>
+        <iframe class="browser-frame" id="browser-frame" title="Browser content"></iframe>
+    </div>
+    <script>window.LegacyBrowserShell.start();</script>
+</body>
+</html>
