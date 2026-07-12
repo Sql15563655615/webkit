@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legacy WebKit compatibility boot</title>
+    <script>
+    window.LegacyWebKitCompat = {
+        stylesheets: ['/assets/app.css'],
+        legacyStylesheets: ['/legacy-webkit/legacy-fallbacks.css'],
+        polyfills: ['/vendor/promise-polyfill.js'],
+        legacyScripts: ['/dist/app.legacy.es5.js'],
+        modernScripts: ['/dist/app.modern.js'],
+        wasmFallbacks: { imagePipeline: '/dist/image-pipeline.fallback.js' },
+        cssVariables: {
+            '.uses-css-vars': {
+                'color': '#1f2937',
+                'background': '#ffffff'
+            }
+        }
+    };
+    </script>
+    <script src="/legacy-webkit/compat-loader.js"></script>
+</head>
+<body>
+    <main class="app-shell uses-css-vars">
+        <h1>Legacy WebKit compatibility boot</h1>
+        <p class="wasm-unavailable-message">此设备不支持 WebAssembly，已切换到服务器端或 JavaScript fallback。</p>
+        <section class="modern-grid">
+            <article>现代浏览器加载 modern bundle。</article>
+            <article>iOS 9.3 加载 ES5 legacy bundle 和 CSS fallback。</article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Fallback styles for iOS 9.3-era WebKit. */
+.legacy-webkit body {
+    -webkit-text-size-adjust: 100%;
+}
+
+.legacy-webkit .app-shell {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.legacy-webkit .modern-grid {
+    display: block;
+}
+
+.legacy-webkit .modern-grid > * {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.legacy-webkit .uses-css-vars {
+    color: #1f2937;
+    background: #ffffff;
+}
+
+.legacy-webkit .sticky-action {
+    position: static;
+}
+
+.no-wasm .requires-wasm {
+    display: none !important;
+}
+
+.no-wasm .wasm-unavailable-message {
+    display: block;
+}
+
+.has-wasm .wasm-unavailable-message {
+    display: none;
+}
